@@ -13,8 +13,8 @@ describe('Testando a Página Pokedex', () => {
     const textoh2 = screen.getByText(/Encountered pokémons/i);
     expect(textoh2).toBeInTheDocument();
   });
-  // eslint-disable-next-line max-len
-  it('Teste se é exibido o próximo pokémon da lista quando o botão Próximo pokémon é clicado', () => {
+  it(`Teste se é exibido o próximo pokémon da lista 
+  quando o botão Próximo pokémon é clicado`, () => {
     renderWithRouter(<App />);
     const btnProxPoke = screen.getByRole('button', { name: /Próximo pokémon/i });
 

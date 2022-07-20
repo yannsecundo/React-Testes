@@ -15,9 +15,9 @@ describe('Testando a pagina NotFound', () => {
 
   it('Teste se a página mostra a imagem https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif', () => {
     renderWithRouter(<NotFound />);
-    const imgNotFound = screen.getByRole('img', {
+    const imageNotFOund = screen.getByRole('img', {
       name: /pikachu crying because the page requested was not found/i,
     });
-    expect(imgNotFound.src).toBe('https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif');
+    expect(imageNotFOund.src).toBe('https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif');
   });
 });

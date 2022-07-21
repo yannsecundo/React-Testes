@@ -14,6 +14,10 @@ describe('Testando a Pagina PokemonDetails', () => {
     expect(
       screen.getByRole('heading', { name: /pikachu details/i }),
     ).toBeInTheDocument();
+    expect(linkDetails).not.toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: /summary/i }),
+    ).toBeInTheDocument();
     expect(
       screen.getByText(
         /this intelligent pokémon roasts hard berries with electricity to make them /i,
